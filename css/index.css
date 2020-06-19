@@ -1,0 +1,93 @@
+﻿@charset "utf-8";
+
+/* common */
+*{margin:0; padding:0;}
+body{font-family:나눔고딕, NanumGothic, 돋움, arial, sans-serif; font-size:12px; line-height:18px; color:#6f6f6f;}
+ul, ol, li{list-style:none;}
+img{border:none;}
+
+
+a{color:#6f6f6f;text-decoration:none;}
+a:hover, a:active{color:#6f6f6f; text-decoration:none;}
+
+.left_t {text-align:left;}
+.right_t {text-align:right;}
+.center_t {text-align:center;}
+
+.fl_l{float:left;}
+.fl_r{float:right;}
+
+
+/* layout */
+.wrap{position:relative; min-height:100%;}
+
+.header{height:142px; min-width:940px;}
+.headerInner{width:940px; margin:0 auto; position:relative;}
+.headerInner h1{margin:0 auto; width:271px; padding-top:45px;}
+.headerInner .quickBanner{position:absolute; top:17px; left:0px;}
+.headerInner .quickBanner li{float:left; margin-right:12px;height:30px;margin-top:3px;}
+.headerInner .util{position:absolute; top:17px; right:0px;}
+.headerInner .util li{float:left; margin-right:12px;margin-top:3px;}
+.headerInner .util li.lineEnd{margin-right:0;}
+.headerInner .gnb{margin:0 auto; width:630px; padding:24px 0 0 0;}
+.headerInner .gnb li{float:left; margin:0 25px;}
+.headerInner .gnb li.lineEnd{margin-right:0;}
+.headerInner .gnb li a{display:block; font-size:18px; font-weight:bold; font-family:"나눔고딕 Bold"; color:#333;}
+
+
+/* main */
+.contents{padding-bottom:150px; width:940px; margin:0 auto; padding-top:46px;}
+
+
+.main_visual_wr{background:url(../images/main_visual11.jpg) center top no-repeat; width:100%;}
+.main_visual{position:relative; width:960px; height:480px; margin:0 auto;}
+.main_visual ul{position:absolute; bottom:0px; left:0px; width:205px; height:103px; background:#000;  /* ie 5,6,7 bug fix */ filter: alpha(opacity=70); opacity: 0.7; padding:30px 0 0 35px;}
+.main_visual li{margin-bottom:13px; height:19px;}
+
+
+
+.wr_mainList{width:940px; height:220px; margin-bottom:20px;}
+.wr_mainList .list_left{float:left; width:205px; margin-right:35px;}
+
+.wr_mainList .list_center{width:460px; float:left;}
+.wr_mainList .list_center p{margin-bottom:10px;}
+.wr_mainList .list_center ul{overflow:hidden; margin-top:45px;}
+.wr_mainList .list_center li{float:left; background:url(images/mall_bar01.gif) right top no-repeat; padding:10px 26px;}
+.wr_mainList .list_center li.arrow{width:23px; background:none; padding:30px 0;}
+.wr_mainList .list_center li.bar_none{background:none;}
+.wr_mainList .list_center li a{text-decoration:none; display:block;}
+.wr_mainList .list_center li span{color:#303030; text-align:center;}
+.wr_mainList .list_center li span:hover{color:#b5121b;}
+.wr_mainList .list_center span{display:block;}
+
+
+.wr_mainList div.list_right{width:205px; float:right;}
+
+
+.wr_mainList02{clear:both; width:940px; height:214px; margin-bottom:20px;}
+.wr_mainList02 img{float:left;}
+
+
+.wr_mainList03{clear:both;}
+.wr_mainList03 ul{float:left; width:205px; margin-right:35px;}
+.wr_mainList03 ul img {padding-bottom:10px;}
+.wr_mainList03 li.going a{padding:0 10px; margin-top:7px; background-color:#666; color:#FFF; font-weight:bold; font-size:11px; display:block; width:50px; text-decoration:none;}
+
+.wr_mainList03 .list_etc{overflow:hidden; margin:0;}
+.wr_mainList03 .list_etc li{float:left;}
+.wr_mainList03 .list_etc li a{display:block; text-decoration:none;}
+.wr_mainList03 .list_etc li .img_wr{background:url(images/mall_bar01.gif) right top no-repeat; padding:10px 15px; margin-bottom:5px;}
+.wr_mainList03 .list_etc li .bar_none{background:none;}
+.wr_mainList03 .list_etc span{display:block; text-align:center;}
+
+
+/* footer */
+.footer{position:relative; bottom:0; left:0; width:100%; min-width:940px; height:115px; padding:33px 0 10px 0; background:url(../images/bg_footer.gif) left bottom repeat-x; font-size:11px;}
+.footerInner{width:940px; margin:0 auto; line-height:14px; overflow:hidden;}
+.footerInner a{padding:0 12px 0 7px; color:#faeff0; border-right:1px solid #FFF;}
+.footerInner a.first{padding:0 12px 0 0;}
+.footerInner a.last{border:0; padding:0 0 0 7px;}
+.footerInner p{margin-top:23px; color:#de898e; line-height:16px; word-spacing:-1px;}
+.footerInner p.address{margin-top:0;}
+
+
