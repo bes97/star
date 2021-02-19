@@ -27,7 +27,7 @@ table{border-collapse:collapse}
 #header{width:70%;padding:0 10px; background:#ffb611; box-shadow:2px 2px 5px rgba(0,0,0,0.5); position:fixed; right:0 ; z-index:100; top:5%;}
 #headerIn{ margin:0 auto; position:relative;line-height:2em;}
 #headerIn h1{font-size:1em;  float:left}
-.gnb{float:right}
+.gnb{float:right} 
 .gnb li{display:inline-block; padding-left:20px;font-weight:bold;}
 .gnb li:hover a{color:#F69;}
 /*.gnb li.active a{color:#F69;}*/
