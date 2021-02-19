@@ -40,7 +40,7 @@ table{border-collapse:collapse}
 
 #content .cont {font-size:2em;margin-bottom:1em;}
 #content .cont p {line-height:1.5em;padding-left:1.5em;}
-
+#content .cont_img img{max-width:100%}
 .cont > li{background:url(images/icon.png) no-repeat; padding-left:20px;margin-bottom:20px;background-position:0 15px;}
 .cont > li.bold{background:none}
 
