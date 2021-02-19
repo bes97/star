@@ -65,4 +65,5 @@ ul.ul00, ul.ul01 {clear:both;width:100%;margin-bottom:1em;}
 
 @media all and (max-width:768px){
     html{font-size:16px}
+    #header{ top:0;}
 }
