@@ -63,4 +63,6 @@ ul.ul00, ul.ul01 {clear:both;width:100%;margin-bottom:1em;}
 .work{font-size:1.2rem;line-height:3em}
 .work a {margin-left:3em;color:skyblue;text-decoration:underline}
 
-@media all and (max-width:768px){html{font-size:14px}}
+@media all and (max-width:768px){
+    html{font-size:11px}
+}
