@@ -1,207 +1,23 @@
 <!DOCTYPE html>
-<!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>디지털디자인 교육과정 안내</title>
+    <meta charset="utf-8">
+    <style>
+        *{margin:0;padding:0}
+        html{font-size:16px}
+        body{color:#777;padding-bottom:300px;}
+        ul, li{list-style: none;}
+        a{text-decoration: none;color:inherit}
+       .box{padding:50px;display: flex;}
+       .box a{display:block;width:50%;}
+       .box img {display:block;width:90%;border:1px solid #eee}
 
-<link href="css/common.css" rel="stylesheet" type="text/css">
-<style>
-.em {font-weight:bold;color:#ffb611}
-.img1{width:100%; margin-top:20px;}
-.top {}
-
-#wrap {background:url(images/back3.png) no-repeat; background-size:100% 100%;background-attachment:fixed;padding-bottom:100px}
-
-#header{width:70%;padding:0 10px; background:#ffb611; box-shadow:2px 2px 5px rgba(0,0,0,0.5); position:fixed; right:0 ; z-index:100; top:5%;}
-#headerIn{ margin:0 auto; position:relative;line-height:2em;}
-#headerIn h1{font-size:1em;  float:left}
-.gnb{float:right}
-.gnb li{display:inline-block; padding-left:20px;font-weight:bold;}
-.gnb li:hover a{color:#F69;}
-/*.gnb li.active a{color:#F69;}*/
-
-#content .inner{width:80%;margin:0 auto; padding:1.2em;margin-top:8%;overflow:hidden;background-color:rgba(0,0,0,0.5);color:#fff}
-
-#content > div{width:100%; left:0; overflow:hidden;}
-#content h2 {margin-bottom:1.5em;font-size:2.5em;font-weight:bold;letter-spacing:5px;text-shadow:2px 2px 1px #333}
-#content h3 {font-size:1.7em;background:#009edb;display:inline-block;padding:5px 20px;margin-bottom:1.5em;box-shadow:2px 2px 2px #333}
-
-#content .cont {font-size:2em;margin-bottom:3em;padding-bottom:30px}
-#content .cont p {line-height:1.5em;padding-left:1.5em;}
-
-.cont > li{background:url(images/icon.png) no-repeat; padding-left:20px;margin-bottom:20px;background-position:0 15px;}
-.cont > li.bold{background:none}
-
-#cont1{}
-#cont1 .bold p {font-weight:normal;}
-#cont2{}
-#cont2 .cont li{margin-bottom:10px;font-size:0.9em}
-#cont3{}
-#cont4{}
-
-
-ul.ul00, ul.ul01 {clear:both;width:100%;margin-bottom:1em;}
-   h4{clear:both;font-size:1em;line-height:2em;color:#bbb}
-   ul.ul00 li,ul.ul01 li {float:left; width:calc(50% - 60px);padding-left:30px;font-size:0.8em}
-
-.tit{clear:both; background-color:#48a3b8;text-align:left; padding-left:20px;width:500px;font-size:1.8em;font-weight:bold;
-     letter-spacing:1px;
-     line-height:1.5em;color:#fff;margin-left:130px;margin-top:100px;margin-bottom:30px;
-	 }
-.work{font-size:1.2em;line-height:3em}
-.work a {margin-left:3em;color:skyblue;text-decoration:underline}
-</style>
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script>
-$(document).ready(function() {//실행틀 시작
-  var menu = $(".gnb > li");
-	var content = $("#content > div");
-	
-	menu.click(function(){
-		/*preventDefault 는 a 태그 처럼 클릭 이벤트 외에 
-별도의 브라우저 행동을 막기 위해 사용됩니다.*/
-		event.preventDefault();
-		
-		//사용자가 클릭한 li
-		var tg = $(this);
-		//순서값을 찾는 함수 index()
-
-		var idx = tg.index();
-		//선택한 li와 순서가 같은 content 를 찾음 eq()
-		var section = content.eq(idx);
-		//선택된 영역의 top 의 좌표값을 저장
-		//.offset()은 선택한 요소의 좌표를 가져오거나 특정 좌표로 이동하게 합니다.
-		var tt = section.offset().top;
-
-		//스크롤이 tt의 값에 맞게 움직이게
-		$("html,body").stop().animate({scrollTop:tt});
-		});//menu.click() 끝
-		
-		// 윈도우에서 scroll() 스크롤이 작동될 때 일어날 일.
-		$(window).scroll(function(){
-		//.scrollTop()은 선택한 요소의 스크롤바 수직 위치를 반환하거나 스크롤바 수직 위치를 정합니다.
-		var location = $(window).scrollTop();
-		
-		content.each(function() {
-			//반복문(each)
-            var tg = $(this);
-			var idx = tg.index();
-//	alert(idx);
-		
-			if(tg.offset().top <= location){
-				menu.removeClass("active");
-				menu.eq(idx).addClass("active");
-				}
-
-    });//each() 끝
-		
-			
-			});//scroll() 끝
-});//실행틀 끝
-</script>
+    </style>
 </head>
 <body>
-  <div id="wrap">
-	<header id="header">
-  	<div id="headerIn">
-    	<h1><a href="index.html">웹디자인&퍼블리셔</a></h1>
-      <ul class="gnb">
-
-      	<li class="active"><a href="#cont1">과정소개</a></li>
-        <li><a href="#cont2">교육내용</a></li>
-        <li><a href="#cont3">수료후취업분야</a></li>
-        <li><a href="#cont4">포트폴리오</a></li>
-      </ul>
-    </div><!--#headerIn-->
-  </header>
-  <div id="content">
-  	<div id="cont1">
-    	<div class="inner">
-		<h2>과정소개</h2>
-      	<ul class="cont">
-		   <li>과정명 : 프런트엔드디자인(웹디자인&퍼블리셔)</li>
-		   <li>수업시간 : 09:00 ~ 17:30 (하루8시간) / 총6개월</li>
-		   <li>교육목표 <p> ADOBE사의 디자인툴(포토샵, 일러스트레이터)와 웹표준을 숙지하여
-		        <span class="em">2D/3D컴퓨터그래픽디자인, 웹디자인, 모바일디자이너</span>와 웹퍼블리셔를 양성하는 전문가 과정</p></li>
-		   <li class="bold">※ 프런트엔드 디자인이란? <br>
-		       <p>웹/앱을 이용하는 사용자가 일반적으로 화면을 통해 접하는 페이지를 프런트엔드(Fron-End)라고 하고 그 뒷단에서 사용자에게 개발적인 부분에서 처리해주는 영역을 백엔드(Back-End)라고 함.</p>
-		   
-		   </li>
-		</ul>
-      </div><!--.inner-->
-    </div><!--#cont1-->
-    <div id="cont2">
-    	<div class="inner">
-      	<h2>교육내용</h2>
-		<h3>NCS(직무능력) 교육이란?</h3>
-		<p class="cont">
-		  능력있는 인재를 개발하는 목적으로 산업현장에서 직무를 수행하기 위해 요구되는 지식, 기술, 태도 등의 내용을 국가가 체계화한 것.<br>
-		  ※ 직무능력이란? 일을 할 수 있는 On-spec!!<br>
-		     &nbsp;&nbsp;&nbsp;&nbsp;- 직업인으로서 기본적으로 갖추어야할 공통 능력<br>
-			 &nbsp;&nbsp;&nbsp;&nbsp;- 해당 직무를 수행하는데 필요한 역량(지식, 기술, 태도)
-		  <br>
-		  <img src="images/ncs.png" alt="ncs" class="img1">
-		</p>
-        <h3>교육과목</h3> 
-		<div class="work">
-          <a href="workbook/프론트엔드디자인워크북1.pdf" target="book">프론트엔드디자인워크북1</a>
-          <a href="workbook/프론트엔드디자인워크북2.pdf" target="book">프론트엔드디자인워크북2</a>
-    <a href="workbook/프론트엔드디자인워크북3.pdf" target="book">프론트엔드디자인워크북3</a>
-		</div>
-
-        <ul class="cont">
-		  <li class="ncs">직업기초능력 : 직업생활에 필요한 내용(정보능력/대인관계능력/직업윤리)</li>
-		  <li class="ncs">시안디자인 : 디자인요소, 아트웍, 베리에이션 응용 완료하기</li>
-		  <li class="ncs">디자인 구성요소 설계 / 제작 : 스토리보드,심미성, 사용성, 매체성 구성요소 설계 및 제작</li>
-		  <li class="ncs">프로토타입설계/제작 : 기초데이터 수집하기, 레퍼런스 조사 분석하기, 아이디어 스케치하기 <br>
-   		   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;프로토타입 제작하기, 사용성 테스트하기, 테스트 수정사항 반영하기</li>
-		  <li class="ncs">UI디자인 : GUI 디자인 콘셉트 도출하기, GUI 템플릿 제작하기, GUI 상세 디자인하기</li>
-		  <li class="ncs">수정보완 : 심미적 디자인 요소, 콘텐츠 사용성, 매체 기능적 요소 수정보완</li>
-		  <li>그래픽툴 : 일러스트레이터 Tool활용, 일러스트제작 기법, 포토샾의 핵심기능, 이미지 리터칭과 마스크</li>
-		  <li class="ncs">웹표준 : HTML5기술, CSS 페이징 디자인,제이쿼리 사용법 </li>
-		  <li>UI프론트엔드디자인프로젝트 : 기획, 디자인 제작, 웹표준 구현, 수정 및 테스트</li>
-		</ul>
-      </div><!--.inner-->
-    </div><!--#cont2-->
-    <div id="cont3">
-    	<div class="inner">
-      	<h2>수료 후 취업분야</h2>
-		<ul class="cont">
-		   <li>편집디자인/시각디자인 광고업체/컨텐츠디자인업체(소셜커머스) : 포토샵과 일러툴이 주 업무 + 동영상</li>
-		   <li>웹에이전시/웹솔루션 업체 : UI디자인 주 업무 그래픽툴로 시안제작, HTML&CSS 및 JQUERY 퍼블리싱 </li>
-		   <li>기업 업체 : 자사에서 필요한 디자인(기획 디자인/편집/웹상세디자인 - 그래픽툴), <br>
-		        웹사이트 제작 관리(HTML&CSS&jq)</li>
-       </ul>
-         <h4></h4>
-		 <ul class="cont"> 	  
-            <li><a href="http://segibiz7.cafe24.com/" target="win">웹사이트 [세기통상]</a></li>
-            <li><a href="http://unhwadeco.alltheway.kr" target="win">모바일 웹사이트 [운화데코]</a></li>
-            <li><a href="http://restmoment.cafe24.com/" target="win">cafe24쇼핑몰제작 [레스트모먼트]</a></li>
-            <li><a href="http://safelook2014.cafe24.com/" target="win">cafe24쇼핑몰제작 [세이프룩]</a></li>
-			<li><a href="http://www.deliciousbusan.com" target="win">어플리케이션 [맛있는부산]</a></li>
-        </ul>
-      </div><!--.inner-->
-    </div><!--#cont3-->
-    <div id="cont4">
-    	<div class="inner">
-     	<h2>동일직종포트폴리오</h2>
-		<ul class="cont" style="line-height:2em">
-		<li>
-			<ul class="ul01 ">
-			<li><a href="http://yax3.dothome.co.kr/" target="win">채지연 포트폴리오</a></li>
-			</ul>
-		
-			<hr>
-       </li>
-		</ul>
-
-      </div><!--.inner-->
-    </div><!--#cont4-->
-
-  </div><!--#content-->
-</div><!--#wrap-->
-
+  <div class="box">
+    <a href="print.pdf" target="w1"><img src="images/print.jpg" alt="인쇄물1"></a>
+    <a href="print2.pdf" target="w1"><img src="images/print2.jpg" alt="인쇄물2"></a>
+  </div>
 </body>
 </html>
