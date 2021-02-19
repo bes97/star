@@ -14,3 +14,51 @@ a {color:inherit;text-decoration:none}
 table{border-collapse:collapse}
 
 .bold{font-weight:bold}
+
+
+
+
+.em {font-weight:bold;color:#ffb611}
+.img1{width:100%; margin-top:20px;}
+.top {}
+
+#wrap {background:url(images/back3.png) no-repeat; background-size:100% 100%;background-attachment:fixed;padding-bottom:100px}
+
+#header{width:70%;padding:0 10px; background:#ffb611; box-shadow:2px 2px 5px rgba(0,0,0,0.5); position:fixed; right:0 ; z-index:100; top:5%;}
+#headerIn{ margin:0 auto; position:relative;line-height:2em;}
+#headerIn h1{font-size:1em;  float:left}
+.gnb{float:right}
+.gnb li{display:inline-block; padding-left:20px;font-weight:bold;}
+.gnb li:hover a{color:#F69;}
+/*.gnb li.active a{color:#F69;}*/
+
+#content .inner{width:80%;margin:0 auto; padding:1.2em;margin-top:8%;overflow:hidden;background-color:rgba(0,0,0,0.5);color:#fff}
+
+#content > div{width:100%; left:0; overflow:hidden;}
+#content h2 {margin-bottom:1.5em;font-size:2.5em;font-weight:bold;letter-spacing:5px;text-shadow:2px 2px 1px #333}
+#content h3 {font-size:1.7em;background:#009edb;display:inline-block;padding:5px 20px;margin-bottom:1.5em;box-shadow:2px 2px 2px #333}
+
+#content .cont {font-size:2em;margin-bottom:3em;padding-bottom:30px}
+#content .cont p {line-height:1.5em;padding-left:1.5em;}
+
+.cont > li{background:url(images/icon.png) no-repeat; padding-left:20px;margin-bottom:20px;background-position:0 15px;}
+.cont > li.bold{background:none}
+
+#cont1{}
+#cont1 .bold p {font-weight:normal;}
+#cont2{}
+#cont2 .cont li{margin-bottom:10px;font-size:0.9em}
+#cont3{}
+#cont4{}
+
+
+ul.ul00, ul.ul01 {clear:both;width:100%;margin-bottom:1em;}
+   h4{clear:both;font-size:1em;line-height:2em;color:#bbb}
+   ul.ul00 li,ul.ul01 li {float:left; width:calc(50% - 60px);padding-left:30px;font-size:0.8em}
+
+.tit{clear:both; background-color:#48a3b8;text-align:left; padding-left:20px;width:500px;font-size:1.8em;font-weight:bold;
+     letter-spacing:1px;
+     line-height:1.5em;color:#fff;margin-left:130px;margin-top:100px;margin-bottom:30px;
+	 }
+.work{font-size:1.2em;line-height:3em}
+.work a {margin-left:3em;color:skyblue;text-decoration:underline}
