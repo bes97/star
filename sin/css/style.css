@@ -1,0 +1,210 @@
+#wrap{}
+
+
+
+/*********************header****************************/
+#header{}
+
+
+/*********************section****************************/
+
+
+/*공통*/
+.inner{text-align: center;}
+.inner .tit_st {font-size: 60px; line-height: 72px;
+                display: inline-block;
+                margin-top: 180px; margin-bottom: 60px;}
+
+.btn_viewmore {display: inline-block;
+               margin-top: 60px;
+               line-height: 45px;                     
+                border-bottom: 3px solid  #EC008C;}
+.btn_viewmore a {font-size: 15px;     
+                font-weight: 800;
+                line-height: 17px;
+                 font-family:'Nanum Gothic', sans-serif;}
+
+
+/*sec1*/
+#sec1 {}
+#sec1 .inner {position: absolute; left: 360px;
+               text-align: left;}
+#sec1 h2.slider_01{position: absolute; left: 360px; top: 100px;}
+#sec1 h2.slider_02{position: absolute; left: 360px; top: 150px;}
+#sec1 .slider_btn_viewmore {position: absolute; left: 360px; top: 420px;
+                           display: inline-block;
+                           line-height: 45px;                     
+                           border-bottom: 3px solid #fff;
+                           z-index: 99999999;
+                           }
+#sec1 .slider_btn_viewmore a {font-size: 15px;     
+                             font-weight: 800;
+                             line-height: 17px;
+                             color: #fff;
+                             font-family:'Nanum Gothic', sans-serif;}
+
+/*sec2*/
+#sec2 {width: 100%; height: 73px;
+       border-bottom: 1px solid #E1E0E1;}
+
+
+#sec2 .slide_box{float: left; height:20px;
+                 margin-top: 27px;
+                 margin-left: 223.478px;                 
+                 overflow:hidden;
+                 position:relative;}
+#sec2 .slide_box:after{content:''; display: inline-block; width: 18px; height: 18px;
+                       background:url(../images/icon_news_off.png);                                             
+                       position: absolute; top: 1px; right: 0px;
+                       transform:translate(-1px -1x);
+                       cursor: pointer;}
+#sec2 .slide_box:hover::after{background:url(../images/icon_news_on.png);}
+
+#sec2 .notice .notice_list{position:relative;}
+#sec2 .notice .notice_list li {font-size: 14px;
+                               line-height:20px;
+                               color: #666;}
+#sec2 .notice .notice_list li > a {padding-right: 40px;}
+
+#sec2 .notice .notice_list li:hover{text-decoration: underline;}
+
+#sec2 .notice .notice_list span.notice_tit {font-size: 16px;}
+
+
+
+/*sec3*/
+
+
+
+#sec3 .prod_cont ul {width: 100%; height: 800px;
+                    border: 1px solid #e5e5e5;
+                    box-sizing: border-box;}
+#sec3 .prod_cont li {float:left;
+                     width:33.333333%;
+                     overflow: hidden;}
+#sec3 .prod_cont li img {height: 400px; transition: 1s;}
+#sec3 .prod_cont li img:hover {transform: scale(1.1);}
+
+
+
+
+#sec3 .prod_cont .cont_box {height: 322px;
+                            outline: 1px solid red;
+                            padding-top: 78px;
+                            position: relative;}                                                                                          
+#sec3 .prod_cont .acrylic .cont_box {height: 302px;
+                                     padding-top: 88px;}
+
+#sec3 .prod_cont .poster .cont_box {height: 342px;
+                                     padding-top: 58px;}
+
+#sec3 .prod_cont .korean .cont_box {height: 342px;
+                                   padding-top: 58px;} 
+
+#sec3 .prod_cont .cont_box .cont_tit{font-size: 22px; line-height: 32px;
+                                      font-family: 'Noto Serif KR', serif;                                      
+                                      margin-bottom: 30px;}
+#sec3 .prod_cont .cont_box .cont_txt{font-size: 14px; color:#666;
+                                     margin-bottom: 50px;}
+#sec3 .prod_cont .cont_box a{color:#666; line-height: 28px;
+                             position: relative;}
+#sec3 .prod_cont .cont_box a:before{content:''; display: block; 
+                                   width: 100%; height: 2px; background-color:#666;
+                                   position: absolute; left: 0; bottom: -2px;}
+
+
+/*sec4*/
+
+
+#sec4 .new_prod { width: 324px; height: 442px;            
+                  background-color: rgba(255,255,255,0.9);
+                  position: absolute; left: 0; top: 0;
+                  opacity: 0;
+                  transition: opacity 0.2s;}
+#sec4 .new_prod:hover{opacity: 1;}
+
+#sec4 .new_prod .new_txt {padding: 173px 30px;}                 
+#sec4 .new_prod .new_txt .brand_name {font-size:14px; line-height: 15px;
+                                     font-weight: 800; color: #E0C799;
+                                     font-family: 'Nanum Gothic', sans-serif;}
+#sec4 .new_prod .new_txt .goods_name {font-size:18px; line-height: 26px;}
+#sec4 .new_prod .new_txt .goods_txt {font-size:14px; line-height: 20px;
+                                     color: #4C4D4E;}
+
+/*sec5*/
+#sec5 {margin-bottom: 180px;}
+#sec5 .event ul{width: 1200px;}
+#sec5 .event ul::after{content:''; display: block; clear: both;}
+#sec5 .event li{float: left;
+                width:376px;
+                margin-right: 36px;}
+#sec5 .event li:last-child{margin-right: 0;}
+#sec5 .event .event_img_box {width: 376px; height: 188px; outline: 1px solid red;}
+#sec5 .event span {display: inline-block;
+                   height: 188px;
+                   overflow: hidden;
+                   position: relative;
+                   transition: 1s;}
+#sec5 .event span:before {content:''; display: block; 
+                           width: 100%; height: 100%;
+                           position: absolute; top: 0; left: 0;                           
+                           background-color:rgba(31,31,31,0.2);
+                           opacity: 0;
+                           transition: opacity 0.5s;} 
+                           
+#sec5 .event span:hover::before {opacity: 1;}                            
+
+#sec5 .event li img{width: 100%; transition: 0.5s;} 
+/*#sec5 .event li img:hover{transform:scale(1.1);}*/
+#sec5 .txt_box {text-align: left;
+                margin-top: 30px;}
+#sec5 .txt_box p.event_group{font-size: 14px;
+                             line-height: 20px;
+                             color: #8b714c;
+                             margin-left: 10px;
+                             margin-bottom: 10px;}              
+#sec5 .txt_box p.event_tit{font-size: 18px;
+                           margin-bottom: 10px;
+                           padding-left: 10px;                           
+                           line-height: 28px;}
+#sec5 .txt_box p.event_term{font-size: 14px;
+                            color: #888;
+                            line-height: 24px;
+                            padding-left: 10px;
+                            padding-bottom: 10px;}
+
+#sec5 .btn_viewmore {margin-top: 73px;}
+
+
+
+/*sec6*/
+#sec6 {margin-top: 50px;
+       margin-bottom: 200px;
+       position: relative;}
+
+#sec6 .gallery_side{position: absolute; left: 360px; top: 112px;}
+
+#sec6:afrer{content:''; display: block; clear: both;}      
+
+#sec6 .gallery_name{font-size: 18px; color:#E0C799; 
+                    font-weight: 700;
+                    font-family:'Nanum Gothic', sans-serif;}
+#sec6 .gallery_txt{margin-top: 25px;
+                   font-size: 36px; line-height: 41px; color: #fff;
+                   font-weight: 400;
+                   font-family: 'Nanum Myeongjo', serif;}
+#sec6 .btn_viewmore{position: absolute; left: 360px; bottom: 112px;
+                   display: inline-block;
+                   line-height: 45px;                     
+                    border-bottom: 3px solid #fff;}
+#sec6 .btn_viewmore a {font-size: 15px;     
+                      font-weight: 800;
+                      line-height: 17px;
+                      color: #fff;
+                      font-family:'Nanum Gothic', sans-serif;}
+
+
+/*sec7*/
+#sec7 .btn_viewmore{margin-bottom: 200px;}
+
+
