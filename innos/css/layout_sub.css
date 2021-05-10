@@ -1,0 +1,265 @@
+/* ---------- CWK Individual Layout CSS Ver. 202101 ---------- */
+
+/* 공통 선언 시작 */
+
+body {
+    background: #e9f4ff;
+}
+
+#wrap { /* 전체 랩핑 */
+    position: relative;
+    width: 100%;
+    min-width: 60rem;
+}
+
+.int_wrap { /* 내부 박스 사이징 */
+    margin: 0 auto;
+    padding: 0 .5rem;
+    width: 60rem; /* 1200px */
+    box-sizing: border-box;
+}
+
+h2.secTitle {
+    position: relative;
+    margin: 0 auto .5rem auto;
+    width: fit-content;
+    font-size: 2.5rem;
+    color: #2d2d2d;
+    line-height: 2.5rem;
+    text-align: center;
+    z-index: 1;
+}
+
+h2.secTitle::before {
+    display: block;
+    position: absolute;
+    bottom: -.15rem;
+    left: calc(0% - .5rem);
+    width: calc(100% + 1rem);
+    height: .5rem;
+    border-radius: .1rem;
+    background: #81abff;
+    z-index: -1;
+    content: '';
+}
+
+p.secSubtitle {
+    margin: 0 auto 2.5rem auto;
+    width: fit-content;
+    font-size: 1rem;
+    color: #2d2d2d;
+    line-height: 1rem;
+    text-align: center;
+}
+
+/* 공통 선언 종료 */
+/* 우선/예외 선언 시작 */
+
+aside#copyright_info {
+    position: relative;
+    background: none;
+}
+
+aside#mnuQuick {
+    display: flex;
+}
+
+/* 우선/예외 선언 종료 */
+
+/* ---------- 서브 레이아웃 시작 ---------- */
+
+section#subContents {
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem 0;
+}
+
+section#subContents > div.int_wrap {
+    padding-bottom: 2.5rem;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 .5rem 2.5rem rgba(162, 187, 214, .4);
+}
+
+/* ---------- 서브 빵가루 시작 ---------- */
+
+ul.sub_bread {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 2rem;
+    position: relative;
+    padding: .75rem 0;
+    font-size: .8rem;
+    line-height: 1rem;
+}
+
+ul.sub_bread::before {
+    display: block;
+    position: relative;
+    top: calc(50% - .3rem);
+    margin: 0 .5rem;
+    font-size: .6rem;
+    color: #808080;
+    content: attr(list-header);
+}
+
+ul.sub_bread > li {
+    position: relative;
+}
+
+ul.sub_bread > li::after {
+    display: block;
+    position: absolute;
+    top: calc(50% - 1rem);
+    right: -1.75rem;
+    width: 1.5rem;
+    height: 2rem;
+    background: url('../images/bread_sep.png') no-repeat center;
+    content: '';
+}
+
+ul.sub_bread > li:first-child::before {
+    display: block;
+    position: absolute;
+    top: calc(50% - .5rem);
+    left: -1.2rem;
+    width: 1rem;
+    height: 1rem;
+    background: url('../images/icon_home.svg') no-repeat center;
+    background-size: contain;
+    content: '';
+}
+
+ul.sub_bread > li:last-child::after {
+    display: none;
+}
+
+hr.sep_full {
+    background: #e3e3e3;
+}
+
+/* ---------- 서브 컨텐츠 시작 ---------- */
+
+h2.sub_title {
+    margin: 1.5rem auto;
+    width: fit-content;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+div#subInsert {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 4rem 1.5rem;
+    width: 100%;
+}
+
+div#subInsert p.read-only {
+    font-size: .85rem;
+    line-height: 1.4rem;
+    letter-spacing: .05rem;
+    word-spacing: .1rem;
+    text-shadow: .05rem .05rem .1rem rgba(0, 0, 0, .25);
+}
+
+.rtl {
+    text-align: right;
+}
+
+div.scroll_image {
+    position: relative;
+    width: 24rem;
+    height: 15rem;
+    border-radius: .2rem;
+    background: #000;
+    box-shadow: 0 1.5rem 1rem -1rem rgba(0, 0, 0, .2);
+    overflow: hidden;
+}
+
+div.scroll_image:nth-of-type(2) > img {
+    animation: scrolldown 25s ease-in infinite reverse;
+}
+
+@keyframes scrolldown {
+    0% {
+        margin-top: -50%;
+        opacity: 0;
+    }
+
+    10% {
+        margin-top: -50%;
+        opacity: 1;
+    }
+
+    90% {
+        margin-top: -30%;
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: -30%;
+        opacity: 0;
+    }
+}
+
+div.scroll_image > img {
+    margin-left: -30%;
+    width: 45rem;
+    opacity: 0;
+    animation: scrolldown 8s infinite;
+}
+
+h4 {
+    margin: auto 0;
+}
+
+div#subInsert > p:last-of-type {
+    margin: auto 0 0 -6rem;
+    font-size: .8rem;
+    color: #808080;
+}
+
+/* ---------- 맨 위로 버튼 시작 ---------- */
+
+aside#gotoTop {
+    position: relative;
+    margin: -1rem auto;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .3);
+    z-index: 5;
+}
+
+aside#gotoTop > a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+aside#gotoTop > a::before,
+aside#gotoTop > a::after {
+    display: block;
+    position: absolute;
+    top: 27%;
+    left: calc(50% - .15rem);
+    width: .3rem;
+    height: 50%;
+    border-radius: .2rem;
+    background: #2d2d2d;
+    transform-origin: 50% .15rem;
+    content: '';
+}
+
+aside#gotoTop > a::before {
+    transform: rotate(45deg);
+}
+
+aside#gotoTop > a::after {
+    transform: rotate(-45deg);
+}

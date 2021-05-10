@@ -1,0 +1,1156 @@
+/* ---------- CWK Individual Layout CSS Ver. 202101 ---------- */
+
+/* 공통 선언 시작 */
+
+body {
+    background: #e9f4ff;
+}
+
+#wrap { /* 전체 랩핑 */
+    position: relative;
+    width: 100%;
+    min-width: 60rem;
+}
+
+.int_wrap { /* 내부 박스 사이징 */
+    margin: 0 auto;
+    padding: 0 .5rem;
+    width: 60rem; /* 1200px */
+    box-sizing: border-box;
+}
+
+h2.secTitle {
+    position: relative;
+    margin: 0 auto .5rem auto;
+    width: fit-content;
+    font-size: 2.5rem;
+    color: #2d2d2d;
+    line-height: 2.5rem;
+    text-align: center;
+    z-index: 1;
+}
+
+h2.secTitle::before {
+    display: block;
+    position: absolute;
+    bottom: -.15rem;
+    left: calc(0% - .5rem);
+    width: calc(100% + 1rem);
+    height: .5rem;
+    border-radius: .1rem;
+    background: #81abff;
+    z-index: -1;
+    content: '';
+}
+
+section#secShortcut > h2.secTitle::before {
+    background: #f90;
+}
+
+p.secSubtitle {
+    margin: 0 auto 2.5rem auto;
+    width: fit-content;
+    font-size: 1rem;
+    color: #2d2d2d;
+    line-height: 1rem;
+    text-align: center;
+}
+
+/* 공통 선언 종료 */
+/* 우선/예외 선언 시작 */
+
+aside#mnuQuick {
+    display: none;
+}
+
+/* 우선/예외 선언 종료 */
+
+/* ---------- (1) 메인 슬라이드 시작 ---------- */
+
+section#slideMain {
+    width: 100%;
+    height: 41rem;
+    background: #000;
+}
+
+div.slide_container {
+    height: 100%;
+    background: #000;
+}
+
+section#slideMain > article {
+    height: 100%;
+}
+
+section#slideMain .slick-slide {
+    padding-top: 13.25rem;
+    height: 41rem;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 0 .5rem rgba(0, 0, 0, 1);
+}
+
+section#slideMain .slick-slide p {
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1;
+}
+
+section#slideMain .slick-slide p.slide_title {
+    margin: .5rem auto;
+    font-size: 2rem;
+}
+
+section#slideMain article.slide_itm01 {
+    background: url('../images/main_banner01.jpg') no-repeat center;
+    background-size: cover;
+}
+
+section#slideMain article.slide_itm02 {
+    background: url('../images/main_banner02.jpg') no-repeat center;
+    background-size: cover;
+}
+
+section#slideMain article.slide_itm03 {
+    background: url('../images/main_banner03.jpg') no-repeat center;
+    background-size: cover;
+}
+
+section#slideMain article.slide_itm04 {
+    background: url('../images/main_banner04.jpg') no-repeat center;
+    background-size: cover;
+}
+
+section#slideMain article.slide_itm05 {
+    background: url('../images/main_banner05.jpg') no-repeat center;
+    background-size: cover;
+}
+
+section#slideMain button.slide_more {
+    display: block;
+    margin: 8rem auto 0 auto;
+    padding: .75rem 1.5rem;
+    width: 8rem;
+    height: 1rem;
+    border: .1rem solid #fff;
+    box-sizing: content-box;
+    background: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(.5rem);
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+
+section#slideMain button.slide_more:hover {
+    background: #fff;
+    color: #2d2d2d;
+}
+
+section#slideMain .slick-dots {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    position: absolute;
+    bottom: 5rem;
+    left: calc(50% - 24rem);
+}
+
+section#slideMain .slick-dots li {
+    margin: auto .4rem;
+    width: .8rem;
+    height: .8rem;
+    border: .35rem solid #fff;
+    border-radius: .4rem;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .2);
+    transition: .3s;
+    font-size: 0;
+    cursor: pointer;
+}
+
+section#slideMain .slick-dots li.slick-active {
+    margin: auto .25rem;
+    width: 3rem;
+    border: .25rem solid cyan;
+    border-radius: .4rem;
+    background: rgba(0, 0, 0, .2);
+    cursor: default;
+}
+
+/* ---------- (2) 뉴스 시작 ---------- */
+
+section#secNews {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    position: relative;
+    margin: -4rem auto;
+    padding: 1rem;
+    width: 50rem;
+    height: 8rem;
+    box-sizing: border-box;
+    background: #2d2d2d;
+    box-shadow: 0 .5rem 2.5rem rgba(0, 0, 0, .4);
+    color: #e3e3e3;
+}
+
+section#secNews a:hover,
+section#secNews a:active {
+    color: #38f2ff;
+    text-decoration: underline solid;
+    transition: .2s;
+}
+
+h2.newsTitle {
+    margin-top: .5rem;
+    width: 12.5rem;
+    font-size: 2.5rem;
+    color: #e6e6e6;
+    text-align: center;
+}
+
+p.newsSubtitle {
+    width: 12.5rem;
+    font-size: .7rem;
+    color: #808080;
+    text-align: right;
+}
+
+section#secNews > hr {
+    margin: 0 1.5rem;
+    width: .05rem;
+    height: 100%;
+    background: #707070;
+}
+
+section#secNews > ul {
+    margin: auto 0;
+    width: 15.5rem;
+    height: 4.5rem;
+    overflow: hidden;
+}
+
+section#secNews > ul > li {
+    position: relative;
+    margin-bottom: .75rem;
+    padding-left: 1rem;
+    height: 1rem;
+    font-size: .7rem;
+    line-height: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+section#secNews > ul > li::before {
+    display: block;
+    position: absolute;
+    top: calc(50% - .2rem);
+    left: 0;
+    width: .4rem;
+    height: .4rem;
+    border-radius: .1rem;
+    content: '';
+}
+
+section#secNews > ul.listNotice {
+    margin: auto 1rem auto auto;
+}
+
+section#secNews > ul.listNotice > li::before {
+    background: #9fc256;
+}
+
+section#secNews > ul.listEvent > li::before {
+    background: #c78484;
+}
+
+/* ---------- (3) 자주 찾는 메뉴 시작 ---------- */
+
+section#secShortcut {
+    padding: 9rem 0 5rem 0;
+    background: linear-gradient(90deg, rgba(255, 187, 68, 1) 0%, rgba(255, 221, 68, 1) 20%, rgba(255, 221, 68, 1) 80%, rgba(255, 187, 68, 1) 100%);
+}
+
+section#secShortcut > div.int_wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+section#secShortcut article {
+    position: relative;
+    margin: 0 .5rem;
+    width: 11.75rem;
+    height: 14rem;
+    background: #fff;
+    box-shadow: 0 .5rem 2.5rem rgba(255, 153, 0, .4);
+    text-align: center;
+}
+
+section#secShortcut article a {
+    display: block;
+    padding: 1.5rem 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+span.scIcon {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 6.25rem;
+    height: 6.25rem;
+    z-index: 2;
+}
+
+section#secShortcut article:first-child span.scIcon {
+    background: url('../images/icon_construct.svg') no-repeat center;
+    background-size: cover;
+}
+
+section#secShortcut article:nth-child(2) span.scIcon {
+    background: url('../images/icon_update.svg') no-repeat center;
+    background-size: cover;
+}
+
+section#secShortcut article:nth-child(3) span.scIcon {
+    background: url('../images/icon_download.svg') no-repeat center;
+    background-size: cover;
+}
+
+section#secShortcut article:last-child span.scIcon {
+    background: url('../images/icon_support.svg') no-repeat center;
+    background-size: cover;
+}
+
+section#secShortcut article:hover span.scIcon {
+    filter: invert(1) contrast(200%);
+}
+
+section#secShortcut article::before,
+section#secShortcut article::after {
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .3s;
+    z-index: 1;
+    content: '';
+}
+
+section#secShortcut article::before {
+    top: 0;
+    left: calc(50% - 3.5rem);
+    width: 7rem;
+    height: 7rem;
+    background: #81abff;
+}
+
+section#secShortcut article::after {
+    top: 3rem;
+    right: 2.3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #ffc756;
+}
+
+section#secShortcut article:hover::before {
+    top: 1.4rem;
+    opacity: 1;
+}
+
+section#secShortcut article:hover::after {
+    top: 1rem;
+    opacity: 1;
+}
+
+h3.scTitle {
+    margin: 1rem 0 .75rem 0;
+    color: #2d2d2d;
+}
+
+p.scSubtitle {
+    font-size: .7rem;
+    color: #808080;
+    line-height: 1rem;
+}
+
+/* ---------- (4) 현재 진행중인 이벤트 시작 ---------- */
+
+section#secEvent {
+    padding: 5rem 0;
+}
+
+section#secEvent > div.int_wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@keyframes onposition {
+    0% {
+        transform: translateY(3rem);
+        opacity: .3;
+    }
+
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+section#secEvent article {
+    width: 24.5rem;
+    height: 24.5rem;
+    box-shadow: 0 .5rem 2.5rem rgba(162, 187, 214, .4);
+    overflow: hidden;
+    animation: onposition 1s;
+}
+
+section#secEvent article > a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+article.event_sq1 {
+    background: darkslateblue;
+}
+
+article.event_sq2 {
+    background: tomato;
+}
+
+article.event_sq3 {
+    background: aquamarine;
+}
+
+article.event_sq4 {
+    background: blanchedalmond;
+}
+
+/* ---------- (5) 포토리뷰 시작 ---------- */
+
+section#secReview {
+    position: relative;
+    padding: 5rem 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+section#secReview::before,
+section#secReview::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    z-index: 100;
+    content: '';
+}
+
+section#secReview::before {
+    left: 0;
+    background: linear-gradient(90deg, rgba(233, 244, 255, 1) 5%, rgba(233, 244, 255, 0) 100%);
+}
+
+section#secReview::after {
+    right: 0;
+    background: linear-gradient(-90deg, rgba(233, 244, 255, 1) 5%, rgba(233, 244, 255, 0) 100%);
+}
+
+section#secReview * {
+    outline: none;
+}
+
+section#secReview > div.review_container {
+    width: 100%;
+    height: 30rem;
+}
+
+section#secReview article {
+    position: relative;
+    margin: 2rem .5rem;
+    width: 18.2rem !important;
+    height: 26rem;
+    opacity: .75;
+    transition: .3s;
+    z-index: 1;
+}
+
+section#secReview article > div.rev_content {
+    position: relative;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 20rem;
+    background: #fff;
+}
+
+section#secReview div.slick-list {
+    height: 35rem;
+}
+
+section#secReview article > div.rev_content > img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
+
+section#secReview article > div.rev_content > span.rev_pict {
+    display: block;
+    position: absolute;
+    top: 8.5rem;
+    left: 1rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .1);
+    z-index: 3;
+}
+
+section#secReview article > div.rev_content > dl > dt {
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+    top: 11rem;
+    left: 7rem;
+    width: 10.2rem;
+}
+
+section#secReview article > div.rev_content > dl > dt > p {
+    width: 100%;
+    height: 1.5rem;
+    font-size: 1rem;
+    color: #2d2d2d;
+    line-height: 1.5rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+section#secReview article > div.rev_content > dl > dt > span {
+    display: block;
+    width: 50%;
+    height: 1rem;
+    font-size: .7rem;
+    color: #808080;
+    line-height: 1rem;
+}
+
+span.rev_date {
+    text-align: right;
+}
+
+section#secReview article > div.rev_content > dl > dd {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1rem;
+    width: 16.2rem;
+    height: 4rem;
+    font-size: .7rem;
+    color: #808080;
+    line-height: 1rem;
+    word-wrap: break-word;
+    line-clamp: 4;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+section#secReview article > div.rev_content > span.rev_starpoint {
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: calc(100% - 2rem);
+}
+
+section#secReview article > div.rev_prod {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    background: #fff;
+    transition: .3s;
+}
+
+section#secReview article > div.rev_prod > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+section#secReview article > div.rev_prod img {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    width: 4rem;
+    height: 4rem;
+    border: .05rem solid #ccc;
+    box-sizing: border-box;
+    background: #fff;
+    object-fit: contain;
+}
+
+section#secReview article > div.rev_prod p {
+    position: absolute;
+    left: 1rem;
+    width: 11.2rem;
+}
+
+section#secReview article > div.rev_prod p.rev_prodname {
+    top: 1rem;
+    height: 1rem;
+    font-size: .8rem;
+    line-height: 1rem;
+}
+
+section#secReview article > div.rev_prod hr {
+    display: none;
+    position: absolute;
+    top: 2.5rem;
+    left: 1rem;
+    width: 17.7rem;
+    height: .05rem;
+    background: #ccc;
+}
+
+section#secReview article > div.rev_prod p.rev_prodspec {
+    bottom: 1rem;
+    height: 2rem;
+    font-size: .7rem;
+    line-height: 1rem;
+}
+
+section#secReview article.slick-center {
+    margin: 0 -1.8rem;
+    width: 25.2rem !important;
+    height: 30rem;
+    opacity: 1;
+    z-index: 2;
+}
+
+section#secReview article.slick-center > div.rev_content {
+    width: 100%;
+    height: 23rem;
+    box-shadow: 0 .5rem 2.5rem rgba(162, 187, 214, .4);
+}
+
+section#secReview article.slick-center > div.rev_content > img {
+    height: 11.5rem;
+}
+
+section#secReview article.slick-center > div.rev_content > span.rev_pict {
+    top: 10rem;
+}
+
+section#secReview article.slick-center > div.rev_content > dl > dt {
+    top: 12.5rem;
+    width: 17.2rem;
+}
+
+section#secReview article.slick-center > div.rev_content > dl > dt > p {
+    font-size: 1.2rem;
+}
+
+section#secReview article.slick-center > div.rev_content > dl > dd {
+    bottom: 3rem;
+    width: 23.2rem;
+}
+
+section#secReview article.slick-center > div.rev_content > span.rev_starpoint {
+    display: flex;
+}
+
+section#secReview article.slick-center > div.rev_prod {
+    height: 6rem;
+    box-shadow: 0 .5rem 2.5rem rgba(162, 187, 214, .4);
+}
+
+section#secReview article.slick-center > div.rev_prod:hover {
+    box-shadow: 0 .5rem 4rem rgba(162, 187, 214, 1);
+    transform: scale(1.05);
+}
+
+section#secReview article.slick-center > div.rev_prod img {
+    top: 1rem;
+    right: 1rem;
+}
+
+section#secReview article.slick-center > div.rev_prod p {
+    width: 17.7rem;
+}
+
+section#secReview article.slick-center > div.rev_prod p.rev_prodname {
+    font-size: 1rem;
+}
+
+section#secReview article.slick-center > div.rev_prod hr {
+    display: initial;
+}
+
+section#secReview article.slick-center > div.rev_prod p.rev_prodspec {
+    font-size: .9rem;
+}
+
+article.rev_itm01 span.rev_pict {
+    background: url('../images/rev_pict/1.jpg') no-repeat center;
+}
+
+article.rev_itm02 span.rev_pict {
+    background: url('../images/rev_pict/2.jpg') no-repeat center;
+}
+
+article.rev_itm03 span.rev_pict {
+    background: url('../images/rev_pict/3.jpeg') no-repeat center;
+}
+
+article.rev_itm04 span.rev_pict {
+    background: url('../images/rev_pict/4.jpeg') no-repeat center;
+}
+
+article.rev_itm05 span.rev_pict {
+    background: url('../images/rev_pict/5.jpg') no-repeat center;
+}
+
+article.rev_itm06 span.rev_pict {
+    background: url('../images/rev_pict/6.jpeg') no-repeat center;
+}
+
+article.rev_itm07 span.rev_pict {
+    background: url('../images/rev_pict/7.jpg') no-repeat center;
+}
+
+section#secReview .slick-arrow {
+    position: absolute;
+    top: 12%;
+    width: 3rem;
+    height: 5rem;
+    border-radius: .5rem;
+    outline: none;
+    text-indent: -500000%;
+    overflow: hidden;
+    filter: drop-shadow(0 0 .25rem rgba(0, 0, 0, .4));
+    transition: .3s;
+    z-index: 3;
+}
+
+section#secReview .slick-arrow:hover {
+    transform: scale(1.3);
+}
+
+section#secReview .slick-prev {
+    left: calc(50% - 14.25rem);
+    background: url('../images/nav_prev.svg') no-repeat center;
+    background-size: cover;
+}
+
+section#secReview .slick-next {
+    right: calc(50% - 14.25rem);
+    background: url('../images/nav_next.svg') no-repeat center;
+    background-size: cover;
+}
+
+/* ---------- (6) 스토어 베스트 시작 ---------- */
+
+section#secBest {
+    padding: 5rem 0;
+    background: linear-gradient(0deg, rgba(129, 171, 255, 0) 15.9%, rgba(129, 171, 255, 1) 15.9%, rgba(129, 171, 255, 1) 75.5%, rgba(129, 171, 255, 0) 75.5%);
+}
+
+section#secBest > div.int_wrap {
+    display: grid;
+    grid-template:
+        'a01 a02 a02 a03'
+        'a04 a05 a06 a06'
+        'a07 a07 a08 a09'
+        'a07 a07 a10 a11';
+    grid-template-rows: 14rem 14rem 14rem 14rem;
+    grid-template-columns: 14rem 14rem 14rem 14rem;
+    gap: 1rem;
+}
+
+section#secBest > div.int_wrap > div {
+    background: #ccc;
+    box-shadow: 0 .5rem 2.5rem rgba(162, 187, 214, .4);
+    overflow: hidden;
+    z-index: 1;
+}
+
+section#secBest > div.int_wrap > div > a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+div.grid_overlay {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 1rem;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(.5rem);
+    color: #fff;
+    text-align: center;
+    transition: .4s;
+}
+
+div.grid_overlay > hr {
+    margin: .8rem 0;
+    width: 20%;
+    height: .05rem;
+    background: #fff;
+}
+
+div.grid_overlay > p.txtlight {
+    font-size: .7rem;
+    line-height: 1rem;
+}
+
+div.one {
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+}
+
+div.two {
+    right: -100%;
+    width: 50%;
+    height: 100%;
+}
+
+div.four {
+    bottom: -100%;
+    width: 100%;
+    height: 50%;
+}
+
+section#secBest > div.int_wrap > div:hover div.one {
+    bottom: 0;
+}
+
+section#secBest > div.int_wrap > div:hover div.two {
+    right: 0;
+}
+
+section#secBest > div.int_wrap > div:hover div.four {
+    bottom: 0;
+}
+
+section#secBest > div.int_wrap > div.grid_01 {
+    grid-area: a01;
+    background: url('../images/hotitem_01.png') no-repeat center;
+    background-size: cover;
+}
+
+section#secBest > div.int_wrap > div.grid_02 {
+    grid-area: a02;
+    background: url('../images/hotitem_02.jpg') no-repeat center;
+    background-size: cover;
+}
+
+section#secBest > div.int_wrap > div.grid_03 {
+    grid-area: a03;
+    background: url('../images/hotitem_03.png') no-repeat center;
+    background-size: cover;
+}
+
+section#secBest > div.int_wrap > div.grid_04 {
+    grid-area: a04;
+    background: url('../images/hotitem_04.png') no-repeat center;
+    background-size: cover;
+}
+
+section#secBest > div.int_wrap > div.grid_05 {
+    grid-area: a05;
+    background: url('../images/hotitem_05.png') no-repeat center;
+    background-size: cover;
+}
+
+section#secBest > div.int_wrap > div.grid_06 {
+    grid-area: a06;
+    background: url('../images/hotitem_06.jpg') no-repeat center;
+    background-size: cover;
+}
+
+section#secBest > div.int_wrap > div.grid_07 {
+    grid-area: a07;
+    background: url('../images/hotitem_07.jpg') no-repeat center;
+    background-size: cover;
+}
+
+section#secBest > div.int_wrap > div.grid_08 {
+    grid-area: a08;
+    background: url('../images/hotitem_08.png') no-repeat center;
+    background-size: cover;
+}
+
+section#secBest > div.int_wrap > div.grid_09 {
+    grid-area: a09;
+    background: url('../images/hotitem_09.png') no-repeat center;
+    background-size: cover;
+}
+
+section#secBest > div.int_wrap > div.grid_10 {
+    grid-area: a10;
+    background: url('../images/hotitem_10.png') no-repeat center;
+    background-size: cover;
+}
+
+section#secBest > div.int_wrap > div.grid_11 {
+    grid-area: a11;
+    background: url('../images/hotitem_11.png') no-repeat center;
+    background-size: cover;
+}
+
+/* ---------- (7) 제품 분류별 보기 시작 ---------- */
+
+section#secCategory {
+    padding: 5rem 0;
+}
+
+form#frmSearch {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    position: relative;
+    margin: 0 auto 2.5rem auto;
+    padding: .5rem;
+    width: 50rem;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 .5rem 2.5rem rgba(162, 187, 214, .4);
+}
+
+form#frmSearch > * {
+    display: block;
+    outline: none;
+}
+
+form#frmSearch > p.secCategory_selected {
+    margin: auto 0 auto .5rem;
+    font-size: .8rem;
+    line-height: 1rem;
+    cursor: help;
+}
+
+form#frmSearch > p.secCategory_selected::after {
+    content: ' ▾';
+}
+
+form#frmSearch > ul.secCategory_sel {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: inherit;
+    font-size: .8rem;
+    line-height: 1rem;
+    z-index: 5;
+}
+
+form#frmSearch > ul.secCategory_sel > li {
+    padding: .5rem 1rem;
+}
+
+form#frmSearch > ul.secCategory_sel > li:hover {
+    background: #aaa;
+    color: #fff;
+}
+
+form#frmSearch > hr {
+    margin: 0 1rem;
+    width: .05rem;
+    height: 2rem;
+    background: #ccc;
+}
+
+form#frmSearch > input {
+    flex-grow: 1;
+    margin: auto 1rem auto 0;
+    padding: .4rem 0;
+    height: 1rem;
+}
+
+form#frmSearch > input:focus {
+    outline: .05rem solid #ccc;
+    font-weight: 600;
+}
+
+form#frmSearch > button {
+    margin-left: auto;
+    width: 4rem;
+    height: 2rem;
+    background: #e3e3e3;
+    cursor: pointer;
+}
+
+section#secCategory > div.int_wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 1rem;
+}
+
+section#secCategory article {
+    flex-grow: 1;
+    position: relative;
+    width: calc(25% - 1rem);
+    height: 20rem;
+    background: #fff;
+    opacity: .75;
+    transition: .5s;
+    z-index: 1;
+}
+
+section#secCategory article.checked {
+    box-shadow: 0 .5rem 2.5rem rgba(162, 187, 214, .4);
+    opacity: 1;
+    transform: translateY(-.5rem);
+    z-index: 2;
+}
+
+section#secCategory article > img {
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+}
+
+section#secCategory article > dl {
+    width: calc(100% - 1rem);
+    height: auto;
+    padding: .5rem;
+    font-size: .9rem;
+    line-height: 1rem;
+}
+
+section#secCategory article > dl > dt {
+    margin-bottom: .5rem;
+}
+
+section#secCategory article > dl > dd > p.cat_price {
+    position: absolute;
+    bottom: 1.15rem;
+    left: .5rem;
+}
+
+section#secCategory article > button {
+    display: block;
+    position: absolute;
+    bottom: .5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    overflow: hidden;
+    transition: .2s;
+    cursor: pointer;
+}
+
+section#secCategory article > button:hover {
+    transform: scale(1.2);
+}
+
+section#secCategory article > button:active {
+    transform: scale(.9);
+}
+
+section#secCategory article > button.btn_wish {
+    right: 3.5rem;
+    background: url('../images/icon_wish.svg') no-repeat center;
+    background-size: contain;
+}
+
+section#secCategory article > button.btn_shop {
+    right: .5rem;
+    background: url('../images/icon_cart.svg') no-repeat center;
+    background-size: contain;
+}
+
+section#secCategory > p.txtblack {
+    margin: 2.5rem auto 0 auto;
+    width: 50rem;
+    background: #81abff;
+    box-shadow: 0 .5rem 2.5rem rgba(162, 187, 214, .4);
+    color: #fff;
+    text-align: center;
+}
+
+section#secCategory > p.txtblack > a {
+    display: block;
+    padding: .8rem;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* ---------- (8) 사이트맵 시작 ---------- */
+
+section#secSitemap {
+    padding: 2.5rem 0;
+    background: #fff;
+    box-shadow: 0 0 2.5rem rgba(162, 187, 214, .4);
+    font-size: .8rem;
+}
+
+section#secSitemap a {
+    padding: .3rem .5rem;
+    border-radius: .1rem;
+    transition: .2s;
+}
+
+section#secSitemap a:hover {
+    background: rgba(129, 171, 255, 1);
+    box-shadow: 0 .25rem .5rem rgba(162, 187, 214, .4);
+    color: #fff;
+}
+
+section#secSitemap > div.int_wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+h2.sitemapTitle {
+    margin-bottom: 1rem;
+    padding-bottom: .4rem;
+    width: 100%;
+    border-bottom: .05rem solid #ccc;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1;
+}
+
+section#secSitemap ul {
+    width: 20%;
+    text-align: center;
+}
+
+section#secSitemap ul > li {
+    margin: .6rem 0;
+}
+
+section#secSitemap ul::before {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #666;
+    content: attr(list-header);
+}
