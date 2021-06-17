@@ -46,7 +46,7 @@ table{border-collapse:collapse}
 .cont > li.bold{background:none}
 
 .port {display:flex;justify-content:flex-start;flex-wrap:wrap;}
-.port p {width:30%}
+.port p {flex-basis:30%}
 .port a{display:block;}
 .port img{width:100%}
 
