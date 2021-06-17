@@ -1,12 +1,7 @@
 @charset "utf-8";
-@font-face { font-family : nanum;    
-   src: url(../font/NanumGothic.eot) format('embedded-opentype'),
-       url(../font/NanumGothic.woff) format('woff'),
-       url(../font/NanumGothic.ttf) format('truetype');   
-   }
 
 * {margin:0; padding:0;}
-html{font-family:nanum; font-size:20px; color:#6f6f6f;transition:font-size 0.5s}
+html{font-size:20px; color:#6f6f6f;transition:font-size 0.5s}
 body{}
 ul, ol, li{list-style-type:none}
 img, fieldset{border:none}
